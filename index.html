@@ -11,9 +11,12 @@
     <!-- Cargar estilos -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
     <!-- Cargar javascript -->
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/marquee.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
 
     <title>Noticias de Videojuegos</title>
 </head>
@@ -36,7 +39,90 @@
 
         <!-- NAVBAR -->
         <section class="layout__nav">
+        
             <nav class="nav__navbar">
+                <!-- BOTÓN MENU RESPONSIVE -->
+                <div class="navbar__mobile-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- EL MENU RESPONSIVE -->
+                <ul class="navbar__mobile-list">
+                
+                    <!-- ELEMENTO CON SUBMENU -->
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">NOTICIAS</a>
+
+                            <div class="mobile-list__icon" id="icon1">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="mobile-list__msubmenu" id="submenu1">
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">VIDEOJUEGOS</a>
+                            </li>
+
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">CINE</a>
+                            </li>
+
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">TECNOLOGÍA</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- ELEMENTO SIMPLE -->
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            ANÁLISIS
+                        </a>
+                    </li>
+
+                    <!-- ELEMENTO SIMPLE -->
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            JUEGOS
+                        </a>
+                    </li>
+
+                    <!-- ELEMENTO CON SUBMENU -->
+                    <li class="mobile-list__item">
+                        <div class="mobile-list__container">
+                            <a href="#" class="mobile-list__link">CATEGORÍAS</a>
+
+                            <div class="mobile-list__icon" id="icon2">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                        <ul class="mobile-list__msubmenu" id="submenu2">
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">ACCIÓN</a>
+                            </li>
+
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">LUCHA</a>
+                            </li>
+
+                            <li class="msubmenu__item">
+                                <a href="#" class="msubmenu__link">SANDBOX</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- ELEMENTO SIMPLE -->
+                    <li class="mobile-list__item">
+                        <a href="#" class="mobile-list__link">
+                            RANKING
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- NAVEGACIÓN ESCRITORIO -->
                 <ul class="navbar__list">
                     <li class="navbar__item">
                         <a href="#" class="navbar__link">
@@ -540,6 +626,7 @@
                     </li>
                 </ul>
 
+                <!-- BUSCADOR -->
                 <form class="navbar__search">
                     <input type="text" class="search__input" name="search" placeholder="Buscar">
                     
@@ -1059,7 +1146,7 @@
                     </div>
                 </li>
 
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden-small">
                     <div class="carousel-games__image">
                         <a href="#" class="carousel-games__image-link">
                             <img src="assets/img/carrusel-games-2.jpg" class="carousel-games__img">
@@ -1085,7 +1172,7 @@
                     </div>
                 </li>
 
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden">
                     <div class="carousel-games__image">
                         <a href="#" class="carousel-games__image-link">
                             <img src="assets/img/carrusel-games-3.jpg" class="carousel-games__img">
@@ -1111,7 +1198,7 @@
                     </div>
                 </li>
 
-                <li class="carousel-games__item">
+                <li class="carousel-games__item carousel-games__item--hidden">
                     <div class="carousel-games__image">
                         <a href="#" class="carousel-games__image-link">
                             <img src="assets/img/carrusel-games-4.jpg" class="carousel-games__img">
